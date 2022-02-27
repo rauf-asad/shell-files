@@ -17,4 +17,5 @@ alias .....="cd ../../../.."
 alias subl='"/mnt/c/Program Files/Sublime Text/sublime_text.exe"'
 
 # activate pandata virtual environment
-alias pandata='source /home/asad/venv/datahub-airflow/bin/activate'
+alias pd_venv="source /home/asad/venv/datahub-airflow/bin/activate"
+alias pd_repo="cd /home/asad/Documents/datahub-airflow"
