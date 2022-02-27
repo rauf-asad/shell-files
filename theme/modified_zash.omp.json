@@ -57,6 +57,21 @@
       ]
     },
     {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#E36464",
+          "properties": {
+            "prefix": "\uE235 ",
+            "postfix": ""
+          }
+        }
+      ]
+    },
+    {
       "alignment": "left",
       "newline": true,
       "segments": [
@@ -82,3 +97,4 @@
   ],
   "final_space": false
 }
+
