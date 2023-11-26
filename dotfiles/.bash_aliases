@@ -6,16 +6,22 @@ alias gbr='git branch'
 alias gl='git pull'
 alias gp='git push'
 alias ga='git add'
+alias gaa='git add -A'
+alias glp="git pull --prune"
+alias gpoc='git push -u origin $(git branch --show-current)'
 
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+# Easier navigation:
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
-# some useful shortcuts for wsl
-alias subl='"/mnt/c/Program Files/Sublime Text/sublime_text.exe"'
+# activate pandata virtual environment (only dh specific)
+alias start_pandata='source /home/asad/venvs/datahub-airflow/bin/activate && cd /home/asad/Documents/datahub-airflow'
+alias pandata_eu='start_pandata && cd dags/pandata/transform/report/eu'
 
-# activate pandata virtual environment
-alias pd_venv="source /home/asad/venv/datahub-airflow/bin/activate"
-alias pd_repo="cd /home/asad/Documents/datahub-airflow"
+# clean all branches in current repo
+alias clean_repo='git branch | grep -v "main" | xargs git branch -D'
+
+# set up pbcopy
+alias pbcopy="xclip -sel clip"
